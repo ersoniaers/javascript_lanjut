@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>time page</title>
+</head>
+<body>
+	time when page was loaded:
+	<script type="text/javascript">
+		now = new date();
+		document.write("<p>"+now+"</p>");
+
+		time = "AM";
+		hours = now.gethours();
+		if (hours>12){
+			hours-= 12;
+			time ="PM"
+		}
+		else if (hours==0){
+				hours = 12;
+		}
+		documet.write ("<p>"+ hours +":"+now.getminutes()+":"+now.getseconds()+" "+ time +"</p>"
+	</script>
+
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Folding Pussle</title>
+</head>
+<body>
+	<script type="text/javascript">
+		distanceToSum = 93.3E6*5280*12;
+		thickness = .002;
+
+		foldCount = 0;
+		while (thickness < distanceToSum) {
+			thickness *= 2;
+			foldCount++;
+		}
+
+		document.write("Number of folds = " + foldCount);
+	</script>
+
+</body>
+</html>

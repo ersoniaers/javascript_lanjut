@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<script language ="javascript">
+	function inputpassword()
+	{
+		coba=1;
+		var pass
+		do{
+			pass=promt('masukan password!')
+			if(pass=="hanya aku yang tahu")
+			{
+				alert("hai...selamat datang!!");
+				window.open('coba1.html');
+				break;}
+				else {
+					alert("passsword nggak cocok.open!! ulangi lagi!!");
+					if(coba==3)
+					{
+						alert("maaf sudah 3x !!");
+						history.go(-1);
+					}
+					coba==coba+1;
+				}
+			}
+			while(coba<=3)
+		}
+</script>
+<form method="POST">
+	<p><input type="buttton" value="passsword" name="B3" onclick="input passsword()"></p>
+</form>
+
+</html>
